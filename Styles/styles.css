@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 100%;
+  font-family: lucida console;
+  background-color: #f0ffff;
+}
+
+/* Estilo para el header */
+header {
+  grid-area: header;
+  text-align: center;
+  font-size: 31px;
+  letter-spacing: 8PX;
+}
+
+/* Estilo para titulo de los datos */
+h2 {
+  color: #5f9ea0;
+  font-size: 27px;
+}
+
+/* Contenedor -GRID- */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'profile profile profile article article article'
+    'experience experience experience charge charge year'
+    'study study study study study study'
+    'footer footer footer footer footer footer';
+  gap: 15px;
+  justify-content: center;
+  margin: 0 5rem;
+}
+
+/* Estilo para la imagen de perfil */
+.profile {
+  grid-area: profile;
+  place-self: center;
+  img {
+      border-radius: 999px;
+      width: 100%;
+    }
+}
+
+
+/* Estilo para el contenido Datos*/
+article {
+  grid-area: article;
+  text-align: left;
+  place-self: center;
+}
+
+/* Estilo para los Enlaces */
+.links {
+  line-height: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  text-decoration: solid;
+  font-size: 20px;
+}
+
+/* Estilo de la seccion Experiencia */
+.experience {
+  grid-area: experience;
+  text-align: left;
+}
+
+/* Estilo de la seccion Cargo */
+.charge {
+  grid-area: charge;
+  text-align: left;
+}
+
+/* Estilo de la seccion Año */
+.year {
+  grid-area: year;
+  text-align: left;
+}
+
+/* Estilo de la seccion Formación */
+.study {
+  grid-area: study;
+  text-align: center;
+}
+
+/* Estilo del footer */
+footer {
+  grid-area: footer;
+  padding: 5px;
+  text-align: left;
+}
